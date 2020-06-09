@@ -1,0 +1,80 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400');
+
+body {
+  font-family: Roboto;
+  font-weight: 300;
+  padding: 0 24px;
+  background-color: rgb(0, 0, 0);
+  padding-top: 30px;
+}
+
+.container {
+  width: 43%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 400;
+  color: rgb(72, 255, 0);
+  padding-bottom: 15px;
+}
+
+.letters {
+  padding-left: 0;
+  font-size: 24px;
+  list-style: none;
+  font-family: monospace;
+  li {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 4px 12px;
+    display: inline;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+form label {
+  color: white;
+  padding-bottom: 20px;
+}
+
+input[type="text"], input[type="submit"] {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 10px;
+  color: white;
+  transition: .4s;
+}
+
+input[type="text"]:focus {
+  border: 1px solid rgb(72, 255, 0);
+}
+
+input[type="submit"] {
+  padding: 10px;
+  width: 15%;
+  color: white;
+  transition: .3s;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(64, 211, 6);
+  border: 1px solid rgb(64, 211, 6);
+  font-weight: 500;
+}
